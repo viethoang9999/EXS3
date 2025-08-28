@@ -12,7 +12,18 @@
     <p>We appreciate your time for filling out the survey.</p>
 
     <div class="thank-box">
-        <p>Your response has been successfully recorded.</p>
+        <p><strong>Your information:</strong></p>
+        <ul class="info-list">
+            <li>First Name: <%= request.getParameter("firstName") %></li>
+            <li>Last Name: <%= request.getParameter("lastName") %></li>
+            <li>Email: <%= request.getParameter("email") %></li>
+            <li>Date of Birth: <%= request.getParameter("dob") %></li>
+            <li>Heard About Us: <%= request.getParameter("source") %></li>
+            <li>Offers: <%= request.getParameter("offers") %></li>
+            <li>Email Offers: <%= request.getParameter("emailOffers") %></li>
+            <li>Contact Method: <%= request.getParameter("contactMethod") %></li>
+        </ul>
+
         <a href="index.html" class="back-btn">⬅ Back to Survey</a>
     </div>
   </div>
