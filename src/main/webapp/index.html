@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="main.css" type="text/css"/>
+</head>
+<body>
+  <div class="container">
+    <img src="https://surveyform-bjh8.onrender.com/images/murachlogo.jpg" alt="Murach Logo" class="logo">
+
+    <h1>Survey</h1>
+    <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+
+    <form action="thanks.jsp" method="post">
+      <h2>Your information:</h2>
+
+      <div class="input-group">
+        <label>First Name</label>
+        <input type="text" name="firstName" required>
+      </div>
+
+      <div class="input-group">
+        <label>Last Name</label>
+        <input type="text" name="lastName" required>
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" name="email" required>
+      </div>
+
+      <div class="input-group">
+        <label>Date of Birth</label>
+        <input type="date" name="dob">
+      </div>
+
+      <h2>How did you hear about us?</h2>
+      <div class="options">
+        <label><input type="radio" name="source" value="search" checked> Search engine</label>
+        <label><input type="radio" name="source" value="word"> Word of mouth</label>
+        <label><input type="radio" name="source" value="social"> Social Media</label>
+        <label><input type="radio" name="source" value="other"> Other</label>
+      </div>
+
+      <h2>Would you like to receive announcements about new CDs and special offers?</h2>
+      <div class="options">
+        <label><input type="checkbox" name="offers" value="yes"> YES, I'd like that.</label>
+        <label><input type="checkbox" name="emailOffers" value="yes"> YES, please send me email announcements.</label>
+      </div>
+
+      <div class="input-group">
+        <label>Please contact me by:</label>
+        <select name="contactMethod">
+          <option value="both">Email or postal mail</option>
+          <option value="email">Email only</option>
+          <option value="mail">Postal mail only</option>
+        </select>
+      </div>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+    
+  </div>
+</body>
+</html>
